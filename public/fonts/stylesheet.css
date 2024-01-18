@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('IRANYekanFN.woff2') format('woff2'),
+        url('IRANYekanFN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morabba';
+    src: url('Morabba-SemiBold.woff2') format('woff2'),
+        url('Morabba-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morabba';
+    src: url('Morabba-Bold.woff2') format('woff2'),
+        url('Morabba-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANYekanFN';
+    src: url('IRANYekanFN-Bold.woff2') format('woff2'),
+        url('IRANYekanFN-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
