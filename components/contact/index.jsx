@@ -11,7 +11,7 @@ function Jobs() {
         <h1 className="text-center text-white text-4xl lg:text-[64px] font-bold font-['morabba'] leading-[83px]">
           فرصت‌های همکاری
         </h1>
-        <div className="self-stretch text-center text-white text-xl font-normal  leading-normal">
+        <div className="self-stretch w-[90%] lg:w-full mx-auto text-center text-white text-lg lg:text-xl font-normal  leading-normal">
           فرصت‌هایی برای اینکه رویاهای خودتان را در خانواده نختاپ بسازید
         </div>
         <div className="justify-center w-full  text-nowrap items-center inline-flex">

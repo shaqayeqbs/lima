@@ -7,10 +7,10 @@ const Main = () => {
     <div className="xl:inline-flex  py-20 text-center md:text-right h-[691px] xl:text-right items-center justify-center xl:gap-[16px] sm:gap-[32px] mr-2 sm:mr-10 relative">
       <div className="flex-col w-full xl:w-[532px] items-center sm:items-end gap-[16px] xl:gap-[32px] flex relative">
         <div className="flex-col mx-auto items-center sm:items-end self-stretch w-full sm:w-[532px] flex-[0_0_auto] flex relative">
-          <div className="self-stretch mx-auto lg:mx-0  my-2 [font-family:'IRANYekan-Bold',Helvetica] font-bold text-[#f7f7f6] text-[18px] sm:text-[24px] leading-[74px] sm:leading-[32px] relative ">
+          <div className="self-stretch mx-auto lg:mx-0  my-2 [font-family:'moraba-Bold'] font-bold text-[#f7f7f6] text-[18px] sm:text-[24px] leading-[74px] sm:leading-[32px] relative ">
             ما، پشت شما هستیم!
           </div>
-          <div className="w-[100%] mx-auto  lg:mx-0   xl:w-full xl:self-stretch [font-family:'moraba-Bold',Helvetica] font-extrabold text-[#f7f7f6] text-[64px] sm:text-[108px] tracking-[20] leading-[74px] sm:leading-[108px] relative [direction:rtl]">
+          <div className="w-[100%] mx-auto  lg:mx-0   xl:w-full xl:self-stretch [font-family:'moraba-Bold'] font-extrabold text-[#f7f7f6] text-[64px] sm:text-[108px] tracking-[20] leading-[74px] sm:leading-[108px] relative [direction:rtl]">
             سرمایه ما،
             <br />
             بــــرتـــری شـماست

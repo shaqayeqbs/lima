@@ -7,10 +7,11 @@ import { useState } from "react";
 
 const Navbar = () => {
   const links = [
-    { text: "گرین هوس", url: "/#contact" },
+    { text: "همکاری با ما", url: "/contact" },
     { text: "ویژگی ها", url: "/#features" },
     { text: "درباره ما", url: "/#about" },
-    { text: "آمارها", url: "/contact" },
+    { text: "آمارها", url: "/#contact" },
+
     { text: "پروژه ها", url: "/#projects" },
   ];
 
@@ -31,7 +32,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex items-center lg:hidden">
-        <Link href="/contact" passHref>
+        <Link href="/" passHref>
           <Image
             src="assets/logo.svg"
             width={100}
@@ -55,7 +56,7 @@ const Navbar = () => {
           </Link>
         ))}
 
-        <Link href="/contact" passHref>
+        <Link href="/" passHref>
           <Image
             src="assets/logo.svg"
             width={100}

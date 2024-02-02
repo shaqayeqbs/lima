@@ -12,7 +12,7 @@ function ContactUs() {
   return (
     <div
       id="contact"
-      onClick={handleClick}
+      onMouseEnter={handleClick}
       className="w-full relative flex-col flex items-center jusify-center bg-[url(/assets/dot.png)] bg-repeat h-[900px]"
     >
       <div className=" grad-top h-[900px] w-full absolute -z-10" />

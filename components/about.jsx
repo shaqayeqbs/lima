@@ -25,7 +25,7 @@ const About = ({ property1 }) => {
     <div
       id="about"
       className="w-full  bg-primary px-20 lg:h-[900px] justify-center relative"
-      onClick={handleSeparatorClick}
+      onMouseEnter={handleSeparatorClick}
     >
       <div className="border-x- border-black/10 bg-opacity-50 relative">
         <div
@@ -48,7 +48,7 @@ const About = ({ property1 }) => {
               initial={{ y: 240, x: 0 }}
               transition={{ duration: 1, delay: 0 }}
               className="text-black absolute -left-2 text-xl cursor-pointer"
-              onClick={() => {
+              onMouseEnter={() => {
                 controls.start("moveToFPosition");
               }}
             >
@@ -221,7 +221,7 @@ const About = ({ property1 }) => {
               </motion.div>
               {/* Retained 4 lines */}
               <motion.p
-                className="  top-[-14px] left-[-53px]  font-thin text-black text-[32px] md:text-[48px] text-center tracking-[0] leading-[57.6px] [direction:rtl]"
+                className="  top-[-14px] left-[-53px]  [font-family:'moraba-regular'] font-thin text-black text-[32px] md:text-[48px] text-center tracking-[0] leading-[57.6px] [direction:rtl]"
                 // variants={sectionVariants}
               >
                 قدم به قدم در کنار شماییم تا بیزنسی بی نقص بسازیم

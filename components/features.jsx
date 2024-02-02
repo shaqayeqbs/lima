@@ -35,7 +35,7 @@ function Features() {
       id="features"
       className={`w-full h-max lg:h-[900px] 
           flex-col justify-center items-center inline-flex`}
-      onClick={handleClick}
+      onMouseEnter={handleClick}
     >
       {featureData.map((feature, index) => (
         <motion.div
@@ -43,7 +43,7 @@ function Features() {
           className="w-full  px-2 lg:h-[300px] py-[0px] border-b-4  border-stone-900  flex-col justify-center items-center gap-2 flex"
           initial={{ opacity: 0, y: -50, zIndex: -10 }}
           animate={controls}
-          onClick={handleClick}
+          onMouseEnter={handleClick}
           transition={{ duration: 1, delay: 0.2 * index }}
         >
           <motion.div className="w-full  lg:w-[1360px] lg:px-[56px]  hover:bg-[#252525] justify-center items-center gap-4 lg:gap-24  lg:inline-flex lg:flex-row-reverse">

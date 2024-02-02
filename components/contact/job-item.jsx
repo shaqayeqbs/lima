@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function JobItem({ job }) {
   return (
-    <div className="border-2 mx-auto max-w-[720px] h-[524px] relative  border-[#30312C] text-center">
+    <div className="border-2 mx-auto max-w-[720px] h-full lg:h-[524px] relative  border-[#30312C] text-center">
       {job?.fori && (
         <div className="absolute w-full bottom-0">
           <img src="/assets/fori.png" />
@@ -37,20 +37,20 @@ function JobItem({ job }) {
         <div className="flex  mt-10 justify-between items-center">
           <Link
             href="/payment"
-            className="w-fit lg:mx-auto z-50 h-[54px] xl:h-[80px] xl:justify-end gap-[8px] sm:gap-[32px] px-[20px] sm:px-[28px]  lg:mx-0     bg-primary flex justify-center items-center relative"
+            className="w-fit  z-50 h-[54px] xl:h-[80px] xl:justify-end gap-[8px] sm:gap-[32px] px-[20px] sm:px-[28px]  lg:mx-0     bg-primary flex justify-center items-center relative"
           >
             <img
               className="relative w-fit h-[11.05px] sm:w-[86.5px] sm:h-[22.09px] ml-[-1.50px]"
               alt="Arrow"
               src="/assets/arrow-1.svg"
             />
-            <div className="flex-1  bg-primary font-bold text-[#121212] text-[18px] sm:text-[24px] tracking-[0] leading-[24px] sm:leading-[32px] relative text-right">
+            <div className="flex-1  bg-primary font-bold text-[#121212] text-[14px] lg:ext-[18px] sm:text-[24px] tracking-[0] leading-[24px] sm:leading-[32px] relative text-right">
               بیشتر
             </div>
           </Link>
-          <div className="text-[20px]">
+          <div className="text-[10px] lg:text-[20px]">
             <p>{job.price}</p>
-            <p className="text-[#BDBDBD]">پایه حقوق</p>
+            <p className="text-sm lg:text-md text-[#BDBDBD]">پایه حقوق</p>
           </div>
         </div>
       </div>

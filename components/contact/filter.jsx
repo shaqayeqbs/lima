@@ -36,11 +36,11 @@ function Filter() {
       {filters.map((filter, index) => (
         <button
           key={index}
-          onClick={() => {
+          onMouseEnter={() => {
             console.log(filter.category);
             setSelectedFilter(filter.category);
           }}
-          className={`w-fit lg:w-[212.48px] h-[58px] p-[8px] lg:p-[16px] ${
+          className={`w-min  lg:w-[212.48px] h-[58px] p-[8px] lg:p-[16px] ${
             selectedFilter == filter.category ? "bg-white" : "bg-black"
           } shadow-inner flex-col justify-center items-center gap-4 lg:gap-8 inline-flex cursor-pointer`}
         >
@@ -49,7 +49,7 @@ function Filter() {
               selectedFilter == filter.category
                 ? "text-black !font-extrabold"
                 : "text-white"
-            } text-base font-medium  leading-normal`}
+            } text-[10px] lg:text-base font-medium  leading-normal`}
           >
             {filter.category}
           </div>

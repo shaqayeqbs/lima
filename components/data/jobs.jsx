@@ -4,7 +4,7 @@ const jobList = [
     title: "طراح رابط کاربری UI-UX Designer",
     location: "رشت",
     type: ["سهامی"],
-    price: "it should be persion",
+    price: "2000000000 تومان",
   },
   {
     fori: false,

@@ -11,7 +11,7 @@ const Summary = ({ property1, frameClassName }) => {
     <div
       className="relative !bg-[url(/assets/dot.png)] bg-repeat 
        border-borderColor block lg:flex flex-col items-center gap-[8px] h-[900px] justify-center"
-      onClick={() => {
+      onMouseEnter={() => {
         dispatch("click");
         anim.start("anim");
       }}
