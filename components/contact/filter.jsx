@@ -53,7 +53,7 @@ function Filter() {
           >
             {filter.category}
           </div>
-        </motionbutton>
+        </button>
       ))}
     </div>
   );
