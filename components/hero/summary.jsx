@@ -8,10 +8,10 @@ const Summary = ({ property1, frameClassName }) => {
   });
 
   return (
-    <div
+    <motion.div
       className="relative !bg-[url(/assets/dot.png)] bg-repeat 
        border-borderColor block lg:flex flex-col items-center gap-[8px] h-[900px] justify-center"
-      onMouseEnter={() => {
+      onViewportEnter={() => {
         dispatch("click");
         anim.start("anim");
       }}
@@ -113,7 +113,7 @@ const Summary = ({ property1, frameClassName }) => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

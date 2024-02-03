@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const featureData = [
   {
@@ -22,28 +23,35 @@ const featureData = [
 
 function Features() {
   const controls = useAnimation();
+  const [ref, inView] = useInView();
 
   const handleClick = () => {
-    controls.start({
-      opacity: 1,
-      y: 0,
-    });
+    if (inView) {
+      controls.start({
+        opacity: 1,
+        y: 0,
+      });
+    }
   };
 
   return (
-    <div
+    <motion.div
       id="features"
       className={`w-full h-max lg:h-[900px] 
           flex-col justify-center items-center inline-flex`}
+      whileInView={handleClick}
+      onViewportEnter={handleClick}
       onMouseEnter={handleClick}
     >
       {featureData.map((feature, index) => (
         <motion.div
           key={index}
-          className="w-full  px-2 lg:h-[300px] py-[0px] border-b-4  border-stone-900  flex-col justify-center items-center gap-2 flex"
+          ref={ref} // This ref should be added to each individual motion component
+          className="w-full px-2 lg:h-[300px] py-[0px] border-b-4 border-stone-900 flex-col justify-center items-center gap-2 flex"
           initial={{ opacity: 0, y: -50, zIndex: -10 }}
           animate={controls}
-          onMouseEnter={handleClick}
+          whileInView={handleClick}
+          onViewportEnter={handleClick}
           transition={{ duration: 1, delay: 0.2 * index }}
         >
           <motion.div className="w-full  lg:w-[1360px] lg:px-[56px]  hover:bg-[#252525] justify-center items-center gap-4 lg:gap-24  lg:inline-flex lg:flex-row-reverse">
@@ -72,7 +80,7 @@ function Features() {
           </motion.div>
         </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }
 

@@ -36,7 +36,7 @@ function Filter() {
       {filters.map((filter, index) => (
         <button
           key={index}
-          onMouseEnter={() => {
+          onClick={() => {
             console.log(filter.category);
             setSelectedFilter(filter.category);
           }}
@@ -53,7 +53,7 @@ function Filter() {
           >
             {filter.category}
           </div>
-        </button>
+        </motionbutton>
       ))}
     </div>
   );

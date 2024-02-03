@@ -10,9 +10,10 @@ function ContactUs() {
     controls.start("animate");
   };
   return (
-    <div
+    <motion.div
       id="contact"
-      onMouseEnter={handleClick}
+      whileInView={handleClick}
+      onViewportEnter={handleClick}
       className="w-full relative flex-col flex items-center jusify-center bg-[url(/assets/dot.png)] bg-repeat h-[900px]"
     >
       <div className=" grad-top h-[900px] w-full absolute -z-10" />
@@ -97,7 +98,7 @@ function ContactUs() {
           />
         </div>
       </motion.form>
-    </div>
+    </motion.div>
   );
 }
 

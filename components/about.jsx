@@ -22,10 +22,11 @@ const About = ({ property1 }) => {
   };
 
   return (
-    <div
+    <motion.div
       id="about"
       className="w-full  bg-primary px-20 lg:h-[900px] justify-center relative"
-      onMouseEnter={handleSeparatorClick}
+      whileInView={handleSeparatorClick}
+      onViewportEnter={handleSeparatorClick}
     >
       <div className="border-x- border-black/10 bg-opacity-50 relative">
         <div
@@ -48,7 +49,10 @@ const About = ({ property1 }) => {
               initial={{ y: 240, x: 0 }}
               transition={{ duration: 1, delay: 0 }}
               className="text-black absolute -left-2 text-xl cursor-pointer"
-              onMouseEnter={() => {
+              whileInView={() => {
+                controls.start("moveToFPosition");
+              }}
+              onViewportEnter={() => {
                 controls.start("moveToFPosition");
               }}
             >
@@ -251,7 +255,7 @@ const About = ({ property1 }) => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
