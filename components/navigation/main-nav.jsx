@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="flex relative bg-black !z-30 w-full items-center border-b-4 border-borderColor pad justify-between p-4 ">
       <div className="flex   items-center">
-        <Link href="/" passHref>
+        <Link href="/contact" passHref>
           <div className="text-nowrap flex items-center space-x-3">
             <h3>Green House</h3>
             <ArrowUpRight color="white" />
